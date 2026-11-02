@@ -1,0 +1,43 @@
+{
+  "company": "Apple Inc.",
+  "ticker": "AAPL",
+  "currency": "USD",
+  "unit": "million",
+  "period_type": "fiscal_nine_months",
+  "unaudited": true,
+  "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/a8-kex991q3202606272026.htm",
+  "source_section": "CONDENSED CONSOLIDATED STATEMENTS OF CASH FLOWS",
+  "accessed_on": "2026-11-02",
+  "periods": [
+    {
+      "fiscal_year": 2025,
+      "period_end": "2025-06-28",
+      "net_income": 84544,
+      "depreciation_and_amortization": 8571,
+      "share_based_compensation": 9680,
+      "other_adjustments": -1748,
+      "accounts_receivable": 5685,
+      "vendor_non_trade_receivables": 13555,
+      "inventories": 1223,
+      "other_assets": -6116,
+      "accounts_payable": -18479,
+      "other_liabilities": -15161,
+      "operating_cash_flow": 81754
+    },
+    {
+      "fiscal_year": 2026,
+      "period_end": "2026-06-27",
+      "net_income": 101464,
+      "depreciation_and_amortization": 9973,
+      "share_based_compensation": 10523,
+      "other_adjustments": -2037,
+      "accounts_receivable": 8316,
+      "vendor_non_trade_receivables": 5671,
+      "inventories": -5461,
+      "other_assets": -16266,
+      "accounts_payable": -5203,
+      "other_liabilities": 10016,
+      "operating_cash_flow": 116996
+    }
+  ]
+}
