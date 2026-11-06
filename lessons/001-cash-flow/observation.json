@@ -11,11 +11,15 @@
   "net_income": 101464,
   "operating_cash_flow": 116996,
   "cash_to_profit_ratio": 1.1531,
-  "prior_cash_to_profit_ratio": 0.9670,
+  "prior_cash_to_profit_ratio": 0.967,
   "formula": "operating_cash_flow / net_income",
   "status": "watch",
   "summary": "现金利润比改善。经营负债变动与应付账款拖累减轻贡献突出；存货占款及其他资产变动抵消部分改善。需继续核验营运资金变化的持续性。",
-  "follow_up": ["后续同口径现金利润比", "存货占款是否回落", "其他经营负债变化的明细及结算节奏"],
+  "follow_up": [
+    "后续同口径现金利润比",
+    "存货占款是否回落",
+    "其他经营负债变化的明细及结算节奏"
+  ],
   "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000018/a8-kex991q3202606272026.htm",
-  "report": "reports/AAPL_FY2026_9M.md"
+  "report": "README.md"
 }

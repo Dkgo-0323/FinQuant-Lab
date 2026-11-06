@@ -3,7 +3,7 @@ import json
 from decimal import Decimal
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parent
 ADJUSTMENTS = (
     "depreciation_and_amortization", "share_based_compensation",
     "other_adjustments", "accounts_receivable", "vendor_non_trade_receivables",
@@ -12,7 +12,7 @@ ADJUSTMENTS = (
 
 
 def main():
-    data = json.loads((ROOT / "data/AAPL_cash_flows.json").read_text(encoding="utf-8"))
+    data = json.loads((ROOT / "data.json").read_text(encoding="utf-8"))
     ratios = []
     for row in data["periods"]:
         calculated = row["net_income"] + sum(row[key] for key in ADJUSTMENTS)
@@ -27,7 +27,7 @@ def main():
     print("Adjustment contribution changes (USD millions):")
     for key in ADJUSTMENTS:
         print(f"  {key}: {current[key] - previous[key]:+,}")
-    observation = json.loads((ROOT / "observations/AAPL_FY2026_9M.json").read_text(encoding="utf-8"))
+    observation = json.loads((ROOT / "observation.json").read_text(encoding="utf-8"))
     for key in ("net_income", "operating_cash_flow"):
         if observation[key] != current[key]:
             raise ValueError(f"Observation mismatch: {key}")
